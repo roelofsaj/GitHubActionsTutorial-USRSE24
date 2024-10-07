@@ -1,4 +1,4 @@
-name: Python Environment
+tname: Python Environment
 
 on:
   # To run manually
@@ -12,10 +12,10 @@ jobs:
     
     - name: Install Python dependencies
       run: |
-        python -m pip install matplotlib numpy mysql-python-connector
+        python -m pip install matplotlib numpy mysql-connector-python
 
     - name: Hello World 
       run: |
         python -c "import numpy as np; print('Numpy version: '+np.__version__)"
         python -c "import matplotlib as mpl; print('Matplotlib version: '+mpl.__version__)"
-        python -c "import mysql-python-connector as mpc; print('mysql-python-connector version: '+mpc.__version__)"
+        python -c "import mysql-connector-python as mpc; print('mysql-connector-python version: '+mpc.__version__)"
