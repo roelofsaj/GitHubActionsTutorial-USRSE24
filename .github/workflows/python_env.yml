@@ -12,9 +12,10 @@ jobs:
     
     - name: Install Python dependencies
       run: |
-        python -m pip install matplotlib numpy
+        python -m pip install matplotlib numpy mysql-python-connector
 
     - name: Hello World 
       run: |
         python -c "import numpy as np; print('Numpy version: '+np.__version__)"
         python -c "import matplotlib as mpl; print('Matplotlib version: '+mpl.__version__)"
+        python -c "import mysql-python-connector as mpc; print('mysql-python-connector version: '+mpc.__version__)"
